@@ -4,11 +4,11 @@ include $(INCLUDE_DIR)/kernel.mk
 PKG_NAME:=bcm63xx-cfe
 PKG_RELEASE:=1
 
-PKG_SOURCE_URL:=https://github.com/openwrt/bcm63xx-cfe.git
+PKG_SOURCE_URL:=https://github.com/rahul-arasikere/bcm63xx-cfe.git
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_DATE:=2025-04-02
-PKG_SOURCE_VERSION:=b8128fa4bdcdaf97549138965b00d5d7ceb7bb0f
-PKG_MIRROR_HASH:=d33fad4fb5f4419bb287f3c3df6cceabab01fc7852c24cf29a15befa38cc0d45
+PKG_SOURCE_DATE:=2026-04-29
+PKG_SOURCE_VERSION:=866dcc6431ba59595553110220bbf896eff4445d
+PKG_MIRROR_HASH:=350c3f497d1e2de58ac8d70b44fc34cd14b40761a8d2d219c2d214931ae9a182
 
 PKG_FLAGS:=nonshared
 

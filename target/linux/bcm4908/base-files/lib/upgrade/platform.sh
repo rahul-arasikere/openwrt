@@ -34,6 +34,7 @@ platform_expected_image() {
 
 	case "$machine" in
 		asus,gt-ac5300)			echo "asus GT-AC5300";;
+		asus,rt-ax88u)			echo "asus RT-AX88U";;
 		netgear,r8000p)			echo "chk U12H359T00_NETGEAR";;
 		tplink,archer-c2300-v1)		echo "";;
 	esac
@@ -71,6 +72,7 @@ platform_identify() {
 	magic=$(get_content "$1" $((size - 20 - 64 + 8)) 12)
 	case "$magic" in
 		GT-AC5300)
+		RT-AX88U)
 			local size=$(wc -c "$1" | cut -d ' ' -f 1)
 
 			BCM4908_FW_FORMAT="asus"

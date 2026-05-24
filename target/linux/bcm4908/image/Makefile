@@ -87,6 +87,19 @@ define Device/asus_gt-ac5300
 endef
 TARGET_DEVICES += asus_gt-ac5300
 
+define Device/asus_rt-ax88u
+  DEVICE_VENDOR := ASUS
+  DEVICE_MODEL := RT-AX88U
+  DEVICE_DTS := broadcom/bcmbca/bcm4908-asus-rt-ax88u
+  IMAGES := bin
+  IMAGE/bin := append-ubi | bcm4908img | bcm4908asus
+  ASUS_PRODUCTID := RT-AX88U
+  ASUS_BUILD_NO := 388
+  ASUS_FW_REV := 3.0.0.4
+  ASUS_EXT_NO := 24385
+endef
+TARGET_DEVICES += asus_rt-ax88u
+
 define Device/asus_gt-ax6000
   DEVICE_VENDOR := ASUS
   DEVICE_MODEL := GT-AX6000
